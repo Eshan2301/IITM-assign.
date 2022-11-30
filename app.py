@@ -4,25 +4,22 @@ import streamlit as st
 
 
 def main():
-  st.title("Division of Two Numbers")
-  html_temp = """
-  <div style="background-color:black;padding:10px">
-  <h2 style="color:black;text-align:center;">Division of 2 Numbers</h2>
-  </div>
-  """
-  st.markdown(html_temp,unsafe_allow_html=True)
-  num1 = st.number_input("Number 1")
-  num2 = st.number_input("Number 2")
-  num3 = st.number_input("Number 3")
   
-if((num1>num2) and (num1>num3)):
-  result=num1
-if((num2>num3) and (num2>num1)):
-  result=num2
-if((num3>num1) and (num3>num2)):
-  result=num3
+
+
+st.title("Greater Of Three Numbers")
+a=st.number_input("Enter First Number")
+b=st.number_input("Enter Second Number")
+c=st.number_input("Enter Third Number")
+
+if(a>b) and (a>c):
+  st.write("a is greater")
+elif(b>a) and (b>c):
+  st.write("b is greater")
+else:
+  st.write("c is greater")
   
-  st.success('The output is {}'.format(result))
+
   
 if __name__=='__main__':
   main()
