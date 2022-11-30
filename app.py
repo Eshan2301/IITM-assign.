@@ -8,9 +8,9 @@ def main():
 
 
   st.title("Greater Of Three Numbers")
-  a=st.number_input("Enter First Number")
-  b=st.number_input("Enter Second Number")
-  c=st.number_input("Enter Third Number")
+  a=st.number_input("Enter First Number a")
+  b=st.number_input("Enter Second Number b")
+  c=st.number_input("Enter Third Number c")
 
   if(a>b) and (a>c):
     st.write("a is greater")
