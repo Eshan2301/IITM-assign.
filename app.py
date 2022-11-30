@@ -15,11 +15,11 @@ def main():
   num2 = st.number_input("Number 2")
   num3 = st.number_input("Number 3")
   
-if(num1>num2 and num1>num3):
+if((num1>num2) and (num1>num3)):
   result=num1
-if(num2>num3 and num2>num1):
+if((num2>num3) and (num2>num1)):
   result=num2
-if(num3>num1 and num3>num2):
+if((num3>num1) and (num3>num2)):
   result=num3
   
   st.success('The output is {}'.format(result))
